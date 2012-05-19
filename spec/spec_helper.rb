@@ -1,5 +1,4 @@
 require 'redis_bitmaps'
-require 'redis'
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
