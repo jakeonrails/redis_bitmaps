@@ -16,5 +16,7 @@ Gem::Specification.new do |gem|
   gem.version       = RedisBitmaps::VERSION
 
   gem.add_dependency 'redis'
+  gem.add_dependency 'bitset'
+
   gem.add_development_dependency 'rspec'
 end
