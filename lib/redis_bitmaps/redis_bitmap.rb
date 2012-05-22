@@ -15,7 +15,7 @@ module RedisBitmaps
     def initialize(key, options = nil)
       options ||= {}
       @key = key
-      @redis = options[:redis] || Redis.new
+      @redis = options[:redis] || RedisBitmaps.configuration.redis
     end
 
     def clear
@@ -56,6 +56,10 @@ module RedisBitmaps
       result.cardinality
     end
     alias_method(:&, :intersection)
+
+    def to_s
+      bitset.to_s
+    end
 
     protected
 

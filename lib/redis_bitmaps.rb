@@ -1,6 +1,7 @@
 require "redis_bitmaps/version"
 require "redis_bitmaps/configuration"
 require "redis_bitmaps/redis_bitmap"
+require "redis_bitmaps/active_record"
 
 module RedisBitmaps
   # Returns the global Configuration object

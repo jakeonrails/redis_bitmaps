@@ -19,4 +19,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'bitset'
 
   gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'activerecord', '~> 3.0.0'
+  gem.add_development_dependency 'sqlite3-ruby'
 end
